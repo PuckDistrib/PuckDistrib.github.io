@@ -1,0 +1,91 @@
+digraph G{
+rankdir=LR; ranksep=equally; compound=true
+subgraph cluster1 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="1" > &lt;&lt;package&gt;&gt; com
+</TD></TR></TABLE>>; color=black;
+nodeCluster1 [ shape=none, label="" ];
+subgraph cluster2 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="2" > &lt;&lt;package&gt;&gt; mywm
+</TD></TR></TABLE>>; color=black;
+nodeCluster2 [ shape=none, label="" ];
+subgraph cluster3 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="3" > &lt;&lt;package&gt;&gt; model
+</TD></TR></TABLE>>; color=black;
+nodeCluster3 [ shape=none, label="" ];
+subgraph cluster4 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="4" > &lt;&lt;package&gt;&gt; dto
+</TD></TR></TABLE>>; color=black;
+nodeCluster4 [ shape=none, label="" ];
+}
+subgraph cluster157 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="157" > &lt;&lt;package&gt;&gt; dao
+</TD></TR></TABLE>>; color=black;
+nodeCluster157 [ shape=none, label="" ];
+subgraph cluster158 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="158" > &lt;&lt;package&gt;&gt; hibernate
+</TD></TR></TABLE>>; color=black;
+nodeCluster158 [ shape=none, label="" ];
+}
+}
+}
+subgraph cluster37 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="37" > &lt;&lt;package&gt;&gt; controller
+</TD></TR></TABLE>>; color=black;
+nodeCluster37 [ shape=none, label="" ];
+subgraph cluster120 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="120" > &lt;&lt;package&gt;&gt; mail
+</TD></TR></TABLE>>; color=black;
+nodeCluster120 [ shape=none, label="" ];
+subgraph cluster121 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="121" > &lt;&lt;package&gt;&gt; javamail
+</TD></TR></TABLE>>; color=black;
+nodeCluster121 [ shape=none, label="" ];
+}
+}
+subgraph cluster38 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="38" > &lt;&lt;package&gt;&gt; actions
+</TD></TR></TABLE>>; color=black;
+nodeCluster38 [ shape=none, label="" ];
+}
+subgraph cluster193 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="193" > &lt;&lt;package&gt;&gt; schedule
+</TD></TR></TABLE>>; color=black;
+nodeCluster193 [ shape=none, label="" ];
+subgraph cluster194 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="194" > &lt;&lt;package&gt;&gt; quartz
+</TD></TR></TABLE>>; color=black;
+nodeCluster194 [ shape=none, label="" ];
+}
+}
+subgraph cluster433 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="433" > &lt;&lt;package&gt;&gt; ajax
+</TD></TR></TABLE>>; color=black;
+nodeCluster433 [ shape=none, label="" ];
+}
+subgraph cluster283 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="283" > &lt;&lt;package&gt;&gt; report
+</TD></TR></TABLE>>; color=black;
+nodeCluster283 [ shape=none, label="" ];
+subgraph cluster284 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="284" > &lt;&lt;package&gt;&gt; jasperreport
+</TD></TR></TABLE>>; color=black;
+nodeCluster284 [ shape=none, label="" ];
+}
+}
+}
+subgraph cluster440 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="440" > &lt;&lt;package&gt;&gt; util
+</TD></TR></TABLE>>; color=black;
+nodeCluster440 [ shape=none, label="" ];
+}
+}
+}
+nodeCluster38 -> nodeCluster3[ ltail=cluster38, lhead=cluster3, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster38 -> nodeCluster158[ ltail=cluster38, lhead=cluster158, style = dotted, arrowhead = dot, color = red, penwidth = 5];
+nodeCluster284 -> nodeCluster158[ ltail=cluster284, lhead=cluster158, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster120 -> nodeCluster121[ ltail=cluster120, lhead=cluster121, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster157 -> nodeCluster3[ ltail=cluster157, lhead=cluster3, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster38 -> nodeCluster283[ ltail=cluster38, lhead=cluster283, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster194 -> nodeCluster120[ ltail=cluster194, lhead=cluster120, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster284 -> nodeCluster283[ ltail=cluster284, lhead=cluster283, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster38 -> nodeCluster193[ ltail=cluster38, lhead=cluster193, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster158 -> nodeCluster157[ ltail=cluster158, lhead=cluster157, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster194 -> nodeCluster158[ ltail=cluster194, lhead=cluster158, style = dotted, arrowhead = dot, color = red, penwidth = 5];
+nodeCluster194 -> nodeCluster3[ ltail=cluster194, lhead=cluster3, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster121 -> nodeCluster120[ ltail=cluster121, lhead=cluster120, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster433 -> nodeCluster158[ ltail=cluster433, lhead=cluster158, style = dotted, arrowhead = dot, color = red, penwidth = 5];
+nodeCluster157 -> nodeCluster4[ ltail=cluster157, lhead=cluster4, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster38 -> nodeCluster1[ ltail=cluster38, lhead=cluster1, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster158 -> nodeCluster3[ ltail=cluster158, lhead=cluster3, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster158 -> nodeCluster4[ ltail=cluster158, lhead=cluster4, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster38 -> nodeCluster4[ ltail=cluster38, lhead=cluster4, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster193 -> nodeCluster194[ ltail=cluster193, lhead=cluster194, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster194 -> nodeCluster193[ ltail=cluster194, lhead=cluster193, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster4 -> nodeCluster3[ ltail=cluster4, lhead=cluster3, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster283 -> nodeCluster284[ ltail=cluster283, lhead=cluster284, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+nodeCluster38 -> nodeCluster440[ ltail=cluster38, lhead=cluster440, style = dotted, arrowhead = dot, color = black, penwidth = 2];
+}

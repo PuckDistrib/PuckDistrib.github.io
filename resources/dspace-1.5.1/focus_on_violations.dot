@@ -1,0 +1,42 @@
+digraph G{
+rankdir=LR; ranksep=equally; compound=true
+subgraph cluster1 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="1" > &lt;&lt;package&gt;&gt; org
+</TD></TR></TABLE>>; color=black;
+nodeCluster1 [ shape=none, label="" ];
+subgraph cluster2 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="2" > &lt;&lt;package&gt;&gt; dspace
+</TD></TR></TABLE>>; color=black;
+nodeCluster2 [ shape=none, label="" ];
+subgraph cluster3 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="3" > &lt;&lt;package&gt;&gt; checker
+</TD></TR></TABLE>>; color=black;
+nodeCluster3 [ shape=none, label="" ];
+ 931 [ label = <<TABLE BGCOLOR="#FFFF33"> <TR> <TD PORT="931" HREF="931" BORDER="0"> <B>BitstreamDAO </B></TD></TR>
+<HR/>
+<TR><TD PORT="991" HREF="991" ALIGN="LEFT" BORDER="0">getBitstream</TD></TR>
+</TABLE>>, shape = "none" ];
+}
+subgraph cluster2975 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="2975" > &lt;&lt;package&gt;&gt; storage
+</TD></TR></TABLE>>; color=black;
+nodeCluster2975 [ shape=none, label="" ];
+subgraph cluster5402 { label=<<TABLE BORDER="0"><TR><TD BORDER="0" HREF="5402" > &lt;&lt;package&gt;&gt; bitstore
+</TD></TR></TABLE>>; color=black;
+nodeCluster5402 [ shape=none, label="" ];
+ 5403 [ label = <<TABLE BGCOLOR="#FFFF33"> <TR> <TD PORT="5403" HREF="5403" BORDER="0"> <B>Cleanup </B></TD></TR>
+<HR/>
+<TR><TD PORT="5405" HREF="5405" ALIGN="LEFT" BORDER="0">main</TD></TR>
+</TABLE>>, shape = "none" ];
+ 4133 [ label = <<TABLE BGCOLOR="#FFFF33"> <TR> <TD PORT="4133" HREF="4133" BORDER="0"> <B><FONT COLOR="red"><U>BitstreamStorageManager</U></FONT> </B></TD></TR>
+<HR/>
+<TR><TD PORT="5407" HREF="5407" ALIGN="LEFT" BORDER="0">cleanup</TD></TR>
+<TR><TD PORT="4134" HREF="4134" ALIGN="LEFT" BORDER="0">retrieve</TD></TR>
+</TABLE>>, shape = "none" ];
+}
+}
+}
+}
+931:991 -> 4133:4133[ style = bold, arrowhead = normal, color = red, penwidth = 5];
+931:991 -> 4133:4134[ style = bold, arrowhead = normal, color = red, penwidth = 5];
+4133:4133 -> 4133:4133[ style = bold, arrowhead = normal, color = black, penwidth = 2];
+5403:5403 -> 5403:5403[ style = bold, arrowhead = normal, color = black, penwidth = 2];
+5403:5405 -> 4133:4133[ style = bold, arrowhead = normal, color = red, penwidth = 5];
+5403:5405 -> 4133:5407[ style = bold, arrowhead = normal, color = red, penwidth = 5];
+}
